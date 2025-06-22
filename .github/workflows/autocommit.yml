@@ -1,5 +1,4 @@
-name: Scrape IMDb Top 250
-
+name: Automated Commit Workflow
 on:
   schedule:
     # Runs at 00:00 UTC every day
