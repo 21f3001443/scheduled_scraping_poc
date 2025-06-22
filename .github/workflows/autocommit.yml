@@ -15,6 +15,10 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
+      - name: Add today's date to file
+        run: |
+          echo "Date: $(date '+%Y-%m-%d')" >> today.txt
+
       - name: 21f3001443@ds.study.iitm.ac.in
         run: |
           git config --local user.email "21f3001443@ds.study.iitm.ac.in"
